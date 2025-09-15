@@ -1,0 +1,211 @@
+{
+  "main": {
+    "id": "628ca706189f91fa",
+    "type": "split",
+    "children": [
+      {
+        "id": "a2baf0dc1879b364",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9c71f08ccb471548",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "10-outline/h2h3.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "h2h3"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "96f662b1441a37a4",
+    "type": "split",
+    "children": [
+      {
+        "id": "ff4e1b913ea391ed",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a942458fd34c832f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "ファイルエクスプローラ"
+            }
+          },
+          {
+            "id": "a75c7bfe20c903b1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "検索"
+            }
+          },
+          {
+            "id": "dd0ecf6c090f645d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "ブックマーク"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "42de6d2294a2be33",
+    "type": "split",
+    "children": [
+      {
+        "id": "6015fe6f8f65e213",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "43a045b4ac3f6715",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Welcomeへのバックリンク"
+            }
+          },
+          {
+            "id": "35cb51daefe6fb13",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Welcomeからのアウトゴーイングリンク"
+            }
+          },
+          {
+            "id": "ac6688136d7204d6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "タグ"
+            }
+          },
+          {
+            "id": "2e0759f3d504b2f3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Welcomeのアウトライン"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:クイックスイッチャーを開く": false,
+      "graph:グラフビューを開く": false,
+      "canvas:新規キャンバスを作成": false,
+      "daily-notes:今日のデイリーノートを開く": false,
+      "templates:テンプレートを挿入": false,
+      "command-palette:コマンドパレットを開く": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "9c71f08ccb471548",
+  "lastOpenFiles": [
+    "25-sessions/ころも式の約束と前提_インタビューセッション.md",
+    "60-assets/タグとリンク付けプロンプト.md",
+    "30-research/ラストダイエットの元.md",
+    "30-research/（実体験記）人体実験白書2024〜私の場合〜.md",
+    "60-assets/モデル用ファシリテータープロンプト.md",
+    "60-assets/タグづけルール.md（書籍ダイエット版）.md",
+    "60-assets/モデルに渡す用テンプレ（プロンプト）.md",
+    "（実体験記）人体実験白書2024〜私の場合〜.md",
+    "20-memos/毎日体重を測る理由.md",
+    "20-memos/読まれやすい書き方.md",
+    "20-memos/体重計の使い方.md",
+    "20-memos/体重や1日のカロリーを計らない人.md",
+    "20-memos/食べてないけど痩せないという人。.md",
+    "20-memos/飲み物.md",
+    "20-memos/フォルダ構成.md",
+    "10-outline/h2.md",
+    "10-outline/h2h3.md",
+    "10-outline/h2",
+    "memo_Obsidian/体重や1日のカロリーを計らない人.md",
+    "templates/temp01.md",
+    "これね.md",
+    "手順.md",
+    "っk.md",
+    "memo",
+    "ダイエットコーチ計太の人格.md",
+    "毎日体重を測る理由.gdoc",
+    "これあれ.md",
+    "2025-08-16.md",
+    "あれれ.md",
+    "scripts/updateTitle.js",
+    "scripts",
+    "temp01",
+    "templates",
+    "あああ.gdoc",
+    "（完成版）人体実験白書2024〜私の場合〜.gdoc"
+  ]
+}
