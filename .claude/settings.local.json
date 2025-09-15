@@ -4,7 +4,8 @@
       "Read(//Users/keeee/Library/CloudStorage/GoogleDrive-allfork2011@gmail.com/マイドライブ/ラストダイエットProject/ラストダイエット/memo_Obsidian/**)",
       "Bash(mkdir:*)",
       "Read(//Users/keeee/Library/CloudStorage/GoogleDrive-allfork2011@gmail.com/マイドライブ/ラストダイエットProject/ラストダイエット/10-outline/**)",
-      "Read(//Users/keeee/Library/CloudStorage/GoogleDrive-allfork2011@gmail.com/マイドライブ/ラストダイエットProject/ラストダイエット/**)"
+      "Read(//Users/keeee/Library/CloudStorage/GoogleDrive-allfork2011@gmail.com/マイドライブ/ラストダイエットProject/ラストダイエット/**)",
+      "Bash(git add:*)"
     ],
     "deny": [],
     "ask": []
