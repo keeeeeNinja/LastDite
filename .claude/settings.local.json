@@ -1,12 +1,32 @@
 {
   "permissions": {
     "allow": [
-      "Read(//Users/keeee/Library/CloudStorage/GoogleDrive-allfork2011@gmail.com/マイドライブ/ラストダイエットProject/ラストダイエット/memo_Obsidian/**)",
-      "Bash(mkdir:*)",
-      "Read(//Users/keeee/Library/CloudStorage/GoogleDrive-allfork2011@gmail.com/マイドライブ/ラストダイエットProject/ラストダイエット/10-outline/**)",
-      "Read(//Users/keeee/Library/CloudStorage/GoogleDrive-allfork2011@gmail.com/マイドライブ/ラストダイエットProject/ラストダイエット/**)",
+      "Bash(claude mcp:*)",
+      "mcp__figma-dev-mode-mcp-server__get_code",
+      "mcp__figma-dev-mode-mcp-server__get_image",
+      "mcp__figma-dev-mode-mcp-server__get_variable_defs",
+      "Bash(python3:*)",
+      "mcp__ide__executeCode",
+      "Read(//var/folders/bt/2k63bb4d40gfffpvwry8wwcr0000gn/T/TemporaryItems/NSIRD_screencaptureui_TBdLjF/**)",
+      "Read(/var/folders/bt/2k63bb4d40gfffpvwry8wwcr0000gn/T/TemporaryItems/NSIRD_screencaptureui_SxTTtB/**)",
+      "Bash(npm run lint:*)",
+      "mcp__figma-dev-mode-mcp-server__get_metadata",
       "Bash(git add:*)",
-      "Bash(git push:*)"
+      "Bash(git commit:*)",
+      "WebFetch(domain:127.0.0.1)",
+      "Bash(lsof:*)",
+      "Bash(git push:*)",
+      "Bash(git restore:*)",
+      "Bash(open http://localhost:3000)",
+      "Bash(git checkout:*)",
+      "Bash(mcp__figma-dev-mode-mcp-server__get_variable_defs:*)",
+      "Bash(mcp__figma-dev-mode-mcp-server__get_code:*)",
+      "WebSearch",
+      "WebFetch(domain:webaim.org)",
+      "WebFetch(domain:coolors.co)",
+      "mcp__figma-dev-mode-mcp-server__get_screenshot",
+      "Read(//Users/keeee/**)",
+      "Bash(git rm:*)"
     ],
     "deny": [],
     "ask": []
