@@ -26,7 +26,13 @@
       "WebFetch(domain:coolors.co)",
       "mcp__figma-dev-mode-mcp-server__get_screenshot",
       "Read(//Users/keeee/**)",
-      "Bash(git rm:*)"
+      "Bash(git rm:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(mkdir:*)",
+      "Bash(for:*)",
+      "Bash(rg:*)",
+      "Bash(done)",
+      "Bash(do echo \"Processing $file...\")"
     ],
     "deny": [],
     "ask": []

@@ -1,68 +1,76 @@
 # ラストダイエット書籍 Spec-Driven Writing System
 
 ## 概要
-このディレクトリは「ラストダイエット」書籍執筆をSpec-Driven Developmentの手法で管理するためのシステムです。
+このディレクトリは「ラストダイエット」書籍執筆をSpec-Driven Developmentの手法で管理するためのシステムです。章ごとに仕様を定義し、仕様 → 清書 → 品質検証の流れを標準化して、いつでも同じ水準でプロレベルの原稿を作成できるようにします。
 
 ## ディレクトリ構造
 ```
 .specify/
-├── README.md                 # このファイル
+├── README.md                   # このファイル
 ├── memory/
-│   └── constitution.md       # 執筆憲法（基本原則・品質基準）
-├── specs/                    # 章ごとの詳細仕様書
-│   ├── _template.md          # 仕様書テンプレート
-│   ├── ch01-foundations/     # 第1章「ころも式の約束と前提」
-│   ├── ch02-mechanism/       # 第2章「体脂肪が減る仕組み」
-│   ├── ch03-roles/           # 第3章「ダイエット等の違い」
-│   ├── ch04-minimal-steps/   # 第4章「今日からの最小手順」
-│   ├── ch05-diet/            # 第5章「食事の整え方」
-│   ├── ch06-exercise/        # 第6章「運動の実践」
-│   ├── ch07-habits/          # 第7章「習慣化の方法」
-│   ├── ch08-measurement/     # 第8章「計測と振り返り」
-│   ├── ch09-plateau/         # 第9章「停滞期対応」
-│   ├── ch10-safety/          # 第10章「安全配慮」
-│   ├── ch11-application/     # 第11章「応用対応」
-│   └── ch12-maintenance/     # 第12章「体重キープ戦略」
-├── plans/                    # 執筆計画書
-└── tasks/                    # タスク管理
+│   └── constitution.md         # 執筆憲法（基本原則・品質基準・共通チェックリスト）
+├── plans/
+│   └── writing-flow.md         # 仕様作成〜清書〜校正の進行管理
+├── prompts/
+│   ├── chapter_clean_draft_prompt.md  # 章清書用の共通AIプロンプト
+│   └── revision_check_prompt.md       # 校正・再確認用プロンプト
+├── specs/                      # 章ごとの詳細仕様書
+│   ├── _template.md            # 仕様書テンプレート
+│   ├── common-style.md         # 全章共通のスタイル・用語・数値指針
+│   ├── ch01-foundations/
+│   │   └── specification.md
+│   ├── ch02-mechanism/
+│   │   └── specification.md
+│   ├── ch03-roles/
+│   │   └── specification.md
+│   ├── ch04-minimal-steps/
+│   │   └── specification.md
+│   ├── ch05-diet/
+│   │   └── specification.md
+│   ├── ch06-exercise/
+│   │   └── specification.md
+│   ├── ch07-habits/
+│   │   └── specification.md
+│   ├── ch08-measurement/
+│   │   └── specification.md
+│   ├── ch09-plateau/
+│   │   └── specification.md
+│   ├── ch10-application/
+│   │   └── specification.md
+│   ├── ch11-family/
+│   │   └── specification.md
+│   └── ch12-maintenance/
+│       └── specification.md
+└── tasks/
+    ├── chapter_spec_checklist.md    # 仕様書作成時のチェックリスト
+    └── final_qc_checklist.md        # 清書後の最終品質チェックリスト
 ```
 
-## 使用方法
+## 標準ワークフロー
+1. **準備**
+   - `memory/constitution.md` で執筆方針・文体・品質基準を再確認
+   - `specs/common-style.md` で共通用語・数値・定型表現を確認
+2. **章仕様の更新**
+   - `specs/_template.md` を参照し、該当章の `specification.md` を最新化
+   - ドラフト（`40-drafts/`）、インタビュー（`25-sessions/`）、実体験記（`30-research/`）から必要情報を抜き出して仕様に反映
+   - `tasks/chapter_spec_checklist.md` を使って網羅性を確認
+3. **清書**
+   - `prompts/chapter_clean_draft_prompt.md` をもとにAIへ指示し、仕様に沿って原稿を作成
+   - 清書原稿は `45-final/` に保存（章ごとのMarkdown）
+4. **品質検証**
+   - `prompts/revision_check_prompt.md` でセルフレビューまたはAIレビューを実施
+   - `tasks/final_qc_checklist.md` を使って出版基準を満たしているか確認
+5. **進行管理**
+   - `plans/writing-flow.md` に進捗と次のアクションを記録
 
-### 1. 執筆開始前
-1. `memory/constitution.md`を確認し、執筆方針を再確認
-2. 該当章の`specs/`フォルダ内の仕様書を確認
-3. 対象ペルソナと品質チェックポイントを把握
-
-### 2. 仕様書作成
-1. `specs/_template.md`をコピー
-2. 章名に応じたディレクトリ内に`specification.md`として保存
-3. 章の詳細仕様を記入
-
-### 3. 執筆実行
-1. 仕様書に基づいて執筆
-2. 憲法の品質基準に照らしながら校正
-3. 完成原稿を該当ディレクトリに保存
-
-### 4. 品質確認
-- 憲法遵守チェック
-- 文体一貫性チェック
-- 読者配慮チェック
-- 安全性チェック
-
-## ワークフロー例
-
-```bash
-# 第1章の執筆を開始する場合
-1. specs/ch01-foundations/specification.md を確認
-2. memory/constitution.md で執筆方針を再確認
-3. 仕様に基づいて執筆開始
-4. 品質チェックポイントで校正
-5. 完成原稿を保存
-```
+## 役割分担の考え方
+- **仕様作成**: 章の目的、読者課題、使用データ、構成骨子を明確化
+- **清書**: 仕様を満たした文章化。口調・用語・構文は共通ガイドに準拠
+- **レビュー**: 安全性・継続性・読者配慮・数値整合性を検証
 
 ## 重要原則
 - **安全性最優先**: 医学的事項は必ず専門家相談を促す
-- **個人差尊重**: 「人それぞれですが」の配慮を忘れない
-- **継続性重視**: 現実的で実行可能な提案のみ
-- **実体験基盤**: 必ず実体験データとの整合性を確認
+- **個人差尊重**: 「人それぞれですが」など配慮文を意識的に挿入
+- **継続性重視**: 読者が無理なく実践できる提案のみ掲載
+- **実体験基盤**: 実際のデータ・記録に根ざした説得力を担保
+- **再現性**: 同じ仕様・プロンプトを使えば誰が実行しても同水準の清書が得られる状態を維持
