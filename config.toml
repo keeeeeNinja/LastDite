@@ -4,3 +4,7 @@ transport = "http"
 
 # 認証が必要な場合だけ以下を追記してください
 # figmaToken = "YOUR_FIGMA_PERSONAL_ACCESS_TOKEN"
+
+[mcp.servers.github]
+url = "https://api.githubcopilot.com/mcp/"
+transport = "http"

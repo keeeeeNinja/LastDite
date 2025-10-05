@@ -32,7 +32,9 @@
       "Bash(for:*)",
       "Bash(rg:*)",
       "Bash(done)",
-      "Bash(do echo \"Processing $file...\")"
+      "Bash(do echo \"Processing $file...\")",
+      "Bash(pandoc:*)",
+      "mcp__github__*"
     ],
     "deny": [],
     "ask": []
