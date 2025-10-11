@@ -14,93 +14,116 @@
 
         body {
             font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
-            line-height: 1.8;
-            color: #333;
-            background: #f5f5f5;
+            line-height: 1.9;
+            color: #2C3E50;
+            background: #E8E8E8;
+            overflow-x: hidden;
         }
 
         header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 3rem 1rem;
+            background: #F5F3F0;
+            color: #2C3E50;
+            padding: 4rem 1rem 3rem;
             text-align: center;
+            border-bottom: 1px solid #D8D6D3;
         }
 
         h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
         }
 
         main {
-            max-width: 900px;
-            margin: 2rem auto;
-            background: white;
-            padding: 2rem;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            max-width: 800px;
+            width: calc(100% - 2rem);
+            margin: 2.5rem auto;
+            background: #FAFAFA;
+            padding: 3rem 2.5rem;
+            border-radius: 16px;
+            box-shadow:
+                8px 8px 16px rgba(0, 0, 0, 0.08),
+                -8px -8px 16px rgba(255, 255, 255, 0.8);
         }
 
         section {
-            margin-bottom: 3rem;
+            margin-bottom: 3.5rem;
         }
 
         h2 {
-            font-size: 1.8rem;
-            color: #667eea;
-            border-left: 5px solid #667eea;
-            padding-left: 1rem;
-            margin: 2rem 0 1rem;
+            font-size: 1.65rem;
+            color: #2C3E50;
+            font-weight: 600;
+            margin: 2.5rem 0 1.2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #2C3E50;
         }
 
         h3 {
-            font-size: 1.4rem;
-            color: #764ba2;
-            margin: 1.5rem 0 0.5rem;
+            font-size: 1.25rem;
+            color: #4A5568;
+            font-weight: 600;
+            margin: 1.8rem 0 0.8rem;
         }
 
         .intro {
-            background: #f9f9f9;
-            padding: 1.5rem;
-            border-radius: 8px;
+            background: #F5F3F0;
+            padding: 2rem;
+            border-radius: 12px;
             margin-bottom: 2rem;
+            box-shadow:
+                4px 4px 8px rgba(0, 0, 0, 0.06),
+                -4px -4px 8px rgba(255, 255, 255, 0.9);
         }
 
         .profile {
-            background: #e8f4f8;
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 1rem 0;
+            background: #F5F3F0;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+            box-shadow:
+                4px 4px 8px rgba(0, 0, 0, 0.06),
+                -4px -4px 8px rgba(255, 255, 255, 0.9);
         }
 
         .month-summary {
-            background: #fff9e6;
-            padding: 1.5rem;
-            border-left: 4px solid #ffc107;
-            margin: 1rem 0 1.5rem;
+            background: #FFFFFF;
+            padding: 1.8rem;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+            box-shadow:
+                4px 4px 10px rgba(0, 0, 0, 0.08),
+                -2px -2px 6px rgba(255, 255, 255, 0.9);
         }
 
         .stats {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1rem;
-            margin: 1rem 0;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1.2rem;
+            margin: 1.5rem 0;
         }
 
         .stat-item {
-            background: #f0f0f0;
-            padding: 0.8rem;
-            border-radius: 5px;
+            background: #F5F3F0;
+            padding: 1.2rem 0.8rem;
+            border-radius: 10px;
             text-align: center;
+            box-shadow:
+                3px 3px 6px rgba(0, 0, 0, 0.06),
+                -3px -3px 6px rgba(255, 255, 255, 0.9);
         }
 
         .stat-label {
-            font-size: 0.9rem;
-            color: #666;
+            font-size: 0.85rem;
+            color: #718096;
+            margin-bottom: 0.3rem;
         }
 
         .stat-value {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #667eea;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #2C3E50;
         }
 
         .topics {
@@ -109,59 +132,75 @@
         }
 
         .topics li {
-            background: white;
-            padding: 0.5rem 1rem;
-            margin: 0.5rem 0;
-            border-left: 3px solid #764ba2;
+            background: #F5F3F0;
+            padding: 0.7rem 1.2rem;
+            margin: 0.6rem 0;
+            border-radius: 6px;
+            border-left: 4px solid #2C3E50;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.04);
         }
 
         .diary-entry {
-            margin: 1rem 0;
-            padding: 1rem;
-            background: #fafafa;
-            border-radius: 5px;
+            margin: 1.2rem 0;
+            padding: 1.5rem;
+            background: #FFFFFF;
+            border-radius: 10px;
+            box-shadow:
+                3px 3px 8px rgba(0, 0, 0, 0.06),
+                -2px -2px 6px rgba(255, 255, 255, 0.8);
         }
 
         .diary-date {
-            font-weight: bold;
-            color: #667eea;
-            margin-bottom: 0.5rem;
+            font-weight: 700;
+            color: #2C3E50;
+            margin-bottom: 0.8rem;
+            font-size: 1.05rem;
         }
 
         .conclusion {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            padding: 2rem;
-            border-radius: 8px;
-            margin-top: 2rem;
+            background: #F5F3F0;
+            padding: 2.5rem;
+            border-radius: 12px;
+            margin-top: 3rem;
+            box-shadow:
+                6px 6px 12px rgba(0, 0, 0, 0.08),
+                -6px -6px 12px rgba(255, 255, 255, 0.9);
         }
 
         .author {
             text-align: right;
-            font-style: italic;
+            font-style: normal;
             margin-top: 2rem;
-            color: #666;
+            color: #4A5568;
+            font-weight: 500;
         }
 
         footer {
             text-align: center;
             padding: 2rem;
-            background: #333;
-            color: white;
+            background: #2C3E50;
+            color: #E8E8E8;
             margin-top: 3rem;
         }
 
         @media (max-width: 768px) {
             main {
-                padding: 1rem;
-                margin: 1rem;
+                padding: 2rem 1.5rem;
+                margin: 1.5rem 1rem;
             }
 
             h1 {
-                font-size: 1.8rem;
+                font-size: 1.5rem;
+                letter-spacing: 0.02em;
             }
 
             h2 {
-                font-size: 1.5rem;
+                font-size: 1.25rem;
+            }
+
+            .stats {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                gap: 1rem;
             }
         }
     </style>
@@ -223,7 +262,7 @@
 
         <article>
             <section>
-                <h2>1月　〜お酒を控え朝昼晩3食食べる！〜</h2>
+                <h2>1月<br>〜お酒を控え朝昼晩3食食べる！〜</h2>
 
                 <div class="month-summary">
                     <div class="stats">
@@ -286,7 +325,7 @@
             </section>
 
             <section>
-                <h2>2月　〜"腸活"への目覚めと3食リズムの継続〜</h2>
+                <h2>2月<br>〜"腸活"への目覚めと3食リズムの継続〜</h2>
 
                 <div class="month-summary">
                     <div class="stats">
@@ -334,7 +373,7 @@
             </section>
 
             <section>
-                <h2>3月　〜決意した禁酒の月、、、〜</h2>
+                <h2>3月<br>〜決意した禁酒の月、、、〜</h2>
 
                 <div class="month-summary">
                     <div class="stats">
@@ -387,7 +426,7 @@
             </section>
 
             <section>
-                <h2>4月　〜3ヶ月経って改善しなかった事〜</h2>
+                <h2>4月<br>〜3ヶ月経って改善しなかった事〜</h2>
 
                 <div class="month-summary">
                     <div class="stats">
@@ -440,7 +479,7 @@
             </section>
 
             <section>
-                <h2>5月　〜人体実験を思いつく〜</h2>
+                <h2>5月<br>〜人体実験を思いつく〜</h2>
 
                 <div class="month-summary">
                     <div class="stats">
@@ -495,7 +534,7 @@
             </section>
 
             <section>
-                <h2>6月　〜人体実験〜</h2>
+                <h2>6月<br>〜人体実験〜</h2>
 
                 <div class="month-summary">
                     <div class="stats">
@@ -553,7 +592,7 @@
             </section>
 
             <section>
-                <h2>7月　〜本来の身体〜</h2>
+                <h2>7月<br>〜本来の身体〜</h2>
 
                 <div class="month-summary">
                     <div class="stats">
@@ -601,7 +640,7 @@
             </section>
 
             <section>
-                <h2>8月　〜ジムはトレーニングする所でお風呂ではない〜</h2>
+                <h2>8月<br>〜ジムはトレーニングする所でお風呂ではない〜</h2>
 
                 <div class="month-summary">
                     <div class="stats">
@@ -649,7 +688,7 @@
             </section>
 
             <section>
-                <h2>9月　〜達成感からくる��息期間、と言う名の中だるみ〜</h2>
+                <h2>9月<br>〜達成感からくる休息期間、と言う名の中だるみ〜</h2>
 
                 <div class="month-summary">
                     <div class="stats">
@@ -697,7 +736,7 @@
             </section>
 
             <section>
-                <h2>10月　〜INURIN〜</h2>
+                <h2>10月<br>〜INURIN〜</h2>
 
                 <div class="month-summary">
                     <div class="stats">
@@ -755,7 +794,7 @@
             </section>
 
             <section>
-                <h2>11月　〜今年いちばん飲んだ月、でも崩れないお腹〜</h2>
+                <h2>11月<br>〜今年いちばん飲んだ月、でも崩れないお腹〜</h2>
 
                 <div class="month-summary">
                     <div class="stats">
@@ -808,7 +847,7 @@
             </section>
 
             <section>
-                <h2>12月　〜最後の月〜</h2>
+                <h2>12月<br>〜最後の月〜</h2>
 
                 <div class="month-summary">
                     <div class="stats">
